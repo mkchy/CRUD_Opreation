@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-// import Footer from "./Footer";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
 export default function SignUp() {
   const navigate = useNavigate();
-  // const [userName, setUserName] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [mobileNo, setMobileNo] = useState("");
@@ -24,7 +22,6 @@ export default function SignUp() {
     } else if (password === "") {
       toast.error("Password Is Required");
     } else {
-      // localStorage.setItem("userName", userName);
       localStorage.setItem("firstName", firstName);
       localStorage.setItem("lastName", lastName);
       localStorage.setItem("mobileNo", mobileNo);
@@ -45,38 +42,6 @@ export default function SignUp() {
         </div>
 
         <div className="card col-lg-12">
-          {/* <div className="row mt-3 m-3">
-            <div className="col-md-4">
-              <label htmlFor="usertype">
-                User Type<span className="text-danger">*</span>
-              </label>
-              <select
-                className="form-control"
-                value={userType}
-                onChange={(e) => setUserType(e.target.value)}
-              >
-                <option>Select User</option>
-                <option>Admin</option>
-                <option>Super User</option>
-                <option>Staff</option>
-              </select>
-            </div>
-
-            <div className="col-md-4">
-              <label htmlFor="username">
-                User Name<span className="text-danger">*</span>
-              </label>
-              <input
-                type="text"
-                className="form-control"
-                name=""
-                placeholder="UserName"
-                value={userName}
-                onChange={(e) => setUserName(e.target.value)}
-              />
-            </div>
-          </div> */}
-
           <div className="row mt-3 m-3">
             <div className="col-md-4">
               <label htmlFor="text">
@@ -165,7 +130,6 @@ export default function SignUp() {
           </div>
         </div>
       </div>
-      {/* <Footer /> */}
     </div>
   );
 }

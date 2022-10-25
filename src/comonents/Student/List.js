@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-// import Footer from "./Footer";
 
 export default function List() {
   const [APIData, setAPIData] = useState([]);
@@ -42,7 +41,7 @@ export default function List() {
 
   return (
     <>
-      <div className="container mt-2 col-8">
+      <div className="container mt-4 shadow-lg p-3 mb-5 col-10 card">
         <div>
           <h1 className="text-center text-success">Employee Details</h1>
           <Link to="/create">
@@ -110,7 +109,6 @@ export default function List() {
             })}
           </table>
         </div>
-      {/* <Footer /> */}
     </>
   );
 }

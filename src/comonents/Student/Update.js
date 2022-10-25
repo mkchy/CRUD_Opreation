@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
-// import Footer from "./Footer";
 
 export default function Update() {
   const navigate = useNavigate();
@@ -38,8 +37,8 @@ export default function Update() {
   };
   return (
     <div className="container">
-        <h4 className="text-center text-success mt-2">Update Student Details</h4>
-      <form className="card mt-4">
+        <h4 className="text-center text-success mt-4">Update Student Details</h4>
+      <form className="shadow-lg p-3 mt-4">
         <div className="form-group col-4 m-3">
           <label>First Name</label>
           <input
@@ -119,7 +118,6 @@ export default function Update() {
         </Link>
        </div>
       </form>
-      {/* <Footer /> */}
     </div>
   );
 }

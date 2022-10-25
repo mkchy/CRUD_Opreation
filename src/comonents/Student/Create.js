@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
-// import Footer from "./Footer";
 import { toast } from "react-toastify";
 
 export default function Create() {
@@ -36,10 +35,10 @@ export default function Create() {
   };
 
   return (
-    <div className="container">
+    <div className="container mt-4 mb-5">
         <h4 className="text-center text-success mt-2">Create New Student Details</h4>
-      <form className="card mt-4">
-        <div className="form-group col-4 m-3">
+      <form className="mt-4 shadow-lg p-3">
+        <div className="form-group col-md-4 m-3">
           <label>First Name</label>
           <input
             className="form-control"
@@ -49,7 +48,7 @@ export default function Create() {
           />
         </div>
 
-        <div className="form-group col-4 m-3">
+        <div className="form-group col-md-4 m-3">
           <label>Last Name</label>
           <input
             className="form-control"
@@ -59,7 +58,7 @@ export default function Create() {
           />
         </div>
 
-        <div className="form-group col-4 m-3">
+        <div className="form-group col-md-4 m-3">
           <label>Date of Joining</label>
           <input
             className="form-control"
@@ -70,7 +69,7 @@ export default function Create() {
           />
         </div>
 
-        <div className="form-group col-4 m-3">
+        <div className="form-group col-md-4 m-3">
           <label>State</label>
           <select
             className="form-control"
@@ -87,7 +86,7 @@ export default function Create() {
         </div>
 
         <div
-          className="form-group col-4 m-3"
+          className="form-group col-md-4 m-3"
           onChange={(e) => setGender(e.target.value)}
         >
           <label>Gender</label>
@@ -98,7 +97,7 @@ export default function Create() {
           Female&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <input type="radio" value="Other" name="gender" /> Other
         </div>
-        <div className="col-4 m-3">
+        <div className="col-md-4 m-3">
         <button className="btn btn-primary" type="submit" onClick={postData}>
           Submit
         </button>
@@ -107,7 +106,6 @@ export default function Create() {
         </Link>
         </div>
       </form>
-      {/* <Footer /> */}
     </div>
   );
 }

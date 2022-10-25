@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 export default function Details() {
   return (
     <div className="container">
-      <h4 className="text-center text-success mt-2">
+      <h4 className="text-center text-success mt-4">
         Show all Student Details
       </h4>
-      <form className="card mt-4">
+      <form className="mt-4 shadow-lg p-3">
         <div className="row m-3">
           <div className="col-4">
             <h6>

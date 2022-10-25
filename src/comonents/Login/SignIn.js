@@ -1,7 +1,5 @@
 import React, {useState} from "react";
 import Admin from "../../images/admin.jpg";
-// import Footer from "./Footer";
-// import "./Home.css";
 import { Link, useNavigate} from "react-router-dom";
 import { toast } from "react-toastify";
 
@@ -67,7 +65,6 @@ localStorage.getItem("password"):"manohar";
             >
               Submit
             </button>
-            {/* <h4 className="form-control power">Powered By ISOFT</h4> */}
           </div>
 
           <div className="col-md-8">
@@ -76,7 +73,6 @@ localStorage.getItem("password"):"manohar";
         </div>
         
       </div>
-      {/* <Footer /> */}
     </div>
   )
 }
